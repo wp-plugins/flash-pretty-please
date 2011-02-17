@@ -1,10 +1,8 @@
 === Plugin Name ===
 Contributors: 
-Donate link: http://example.com/
+Donate link: href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=E8N9D537FB8WN
 Tags: Flash, Apple, Steve Jobs
-Requires at least: 2.0.2
-Tested up to: 2.1
-Stable tag: 1.0.1
+
 
 Detects iPhone/iPad/iPod and pops up a message that asks to users to politely contact apple asking for Flash.
 
