@@ -1,9 +1,36 @@
-Flash Pretty Please version 1.0
----------------------------------
-Installation
-Unzip Flash Pretty Please in the /wp-content/plugin/ area of your website
+=== Plugin Name ===
+Contributors: 
+Donate link: http://example.com/
+Tags: Flash, Apple, Steve Jobs
+Requires at least: 2.0.2
+Tested up to: 2.1
+Stable tag: 1.0.1
 
-Customization
-Flash Pretty Please comes with a custom message popup. You can easily customize it from your wordpress dashboard under setting -> Flash Pretty Please
- 
-Note: If you use a directory path other than /wp-content/plugin/ it will cause the css and js file not to work. We are going to have this fixed soon.
+Detects iPhone/iPad/iPod and pops up a message that asks to users to politely contact apple asking for Flash.
+
+== Description ==
+
+This plug in detects the iPod, iPhone. and iPad user agent.  It then pops up a message that asks users to write or fax Steve Jobs and very politely ask him to make Flash available as an option for the iPhone, iPad or iPod.
+
+To see an example on your browser regardless of whether you are using an iDevice see here <a href="http://it.language101.com/flash-pretty-please-demo-page/">http://it.language101.com/flash-pretty-please-demo-page/</a>
+
+== Installation ==
+
+1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Make sure '<?php wp_footer(); ?>` is in your templates
+
+NOTE: Currently if your wordpress installation is not at the root of your website the plugin will not work. We will fix this soon.
+
+== Screenshots ==
+
+1.  screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
+the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1.png` (or jpg, jpeg, gif)
+
+
+== Changelog ==
+
+= 1.0 =
+*Plugin Released :) 
+
+
