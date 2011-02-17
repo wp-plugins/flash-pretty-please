@@ -1,0 +1,65 @@
+.pretty_please_title
+{
+  color:#EE0000;  
+}
+.pretty_please_message
+{
+    padding:20px;
+}
+.pretty_please_center
+{
+    width:100%;
+    font-size:110%;
+    font-weight:bold;
+    text-align:center;
+}
+.pretty_please_popup
+{
+    background-color:black;
+    opacity:0.5;
+    position:absolute;
+    text-align:center;
+    width:100%;
+    filter:alpha(opacity=50);
+    z-index:1;
+    top:0px;
+    left:0px;
+}
+.pretty_please_popup_text
+{
+    border:solid 2px black;
+    background-color:white;
+    margin:auto;
+    padding:15px;
+    padding-bottom:5px;
+    width:700px;
+    font-size:125%;
+    display:block;
+}
+.pretty_please_button
+{
+    background-repeat:repeat-x;
+    background-position: center center;
+    border:1px solid #C4C48C;
+    color:#605D4C;
+    cursor:pointer;
+    background-color:#D1CCB2;
+    padding:20px 30px;
+    text-decoration:none;
+    margin:4px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    font-size:250%;
+    
+}
+.pretty_please_button:hover
+{
+    background-color:rgb(188,174,152);
+    color:black;
+}
+.pretty_please_close_topleft
+{
+    font-size:180%;
+    padding:15px;
+}
+
