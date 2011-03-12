@@ -3,7 +3,7 @@
 Plugin Name: Flash Pretty Please
 Plugin URI: http://it.language101.com/flash-pretty-please/
 Description: This plug in detects the iPhone and iPad user agent.  It then pops up a message that asks users to write or fax Steve Jobs and very politely ask him to make Flash available as an option for the iPhone, iPad or iPod. &nbsp;&nbsp;&nbsp; <a href="/wp-admin/options-general.php?page=FlashPrettyPlease">Settings</a> | <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=E8N9D537FB8WN">Donate</a>
-Version: 1.0
+Version: 1.1
 Author: Language101.com
 Author URI: http://Language101.com
 */
@@ -12,9 +12,12 @@ Author URI: http://Language101.com
 add_action('admin_menu', 'prettyPleaseMenu');
 add_action('wp_footer','prettyPleasePopUp');
 
+$pretty_please_directory = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__));
+
+
 if(prettyPleaseIsIPhoneOrIPad())
 {
-    wp_enqueue_style('pretty-please-style', '/wp-content/plugins/flash-pretty-please/pretty-please.css');
+    wp_enqueue_style('pretty-please-style', "$pretty_please_directory/pretty-please.css");
 }
 
 $pretty_please_description="This plug in detects the iPhone and iPad user agent.  It then pops up a message that asks users to write or fax Steve Jobs and very politely ask him to make Flash available as an option for the iPhone, iPad or iPod.";
@@ -391,9 +394,9 @@ function prettyPleasePopUp()
                 }
                 echo "var timebetween=".get_option("pretty_please_popupmintime").";";
 
-
+                global $pretty_please_directory;
                 echo "</script>";
-                echo "<script type='text/javascript' src='/wp-content/plugins/flash-pretty-please/pretty-please.js'></script>";
+                echo "<script type='text/javascript' src='$pretty_please_directory/pretty-please.js'></script>";
             }
             
         }

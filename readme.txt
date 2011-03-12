@@ -18,8 +18,6 @@ To see an example on your browser regardless of whether you are using an iDevice
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Make sure '<?php wp_footer(); ?>` is in your templates
 
-NOTE: Currently if your wordpress installation is not at the root of your website the plugin will not work. We will fix this soon.
-
 == Screenshots ==
 
 1.  screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
@@ -28,7 +26,11 @@ the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1
 
 == Changelog ==
 
+= 1.1 =
+*Now works if you have wordpress in a different directory than the website root directory
+*Fixed some width issues to make it look better on idevices
 = 1.0 =
 *Plugin Released :) 
+ 
 
 
